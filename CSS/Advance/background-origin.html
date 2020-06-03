@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Origin</title>
+    <style>
+        #ex1{
+            border: 10px solid black;
+            background: url(Img2.jpeg);
+            background-repeat: no-repeat;
+            width: 500px;
+            color: orange;
+            padding: 35px;
+         
+        }
+        #ex2{
+            border: 10px solid black;
+            background:url(Img2.jpeg);
+            background-repeat: no-repeat;
+            width: 500px;
+            color: orange;
+            background-origin: border-box;
+            padding: 35px;
+        }
+        #ex3{
+            border: 10px solid black;
+            background:url(Img2.jpeg);
+            background-repeat: no-repeat;
+            width: 500px;
+            color: orange;
+            background-origin: content-box;
+            padding: 35px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>The background-origin Property</h1>
+
+    <p>No background-origin (padding-box is default):</p>
+    <div id="ex1">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <p>background-origin: border-box:</p>
+    <div id="ex2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <p>background-origin: content-box:</p>
+    <div id="ex3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+
+</body>
+</html>

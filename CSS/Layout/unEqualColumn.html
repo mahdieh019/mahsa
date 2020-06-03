@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnEqual Column</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+        }
+        .navbar a{
+            float: left;
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 14px 16px;
+            text-align: center;
+        }
+        .navbar a:hover{
+            background-color: #ccc;
+            color: black;
+        }
+
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.middle{
+            width:50%;
+        }
+
+        .container:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and  (max-width:600px){
+            .column.side , .column.middle{
+                width: 100%;
+            }
+        }
+
+        .footer{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+
+    <div class="navbar">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <div class="container">
+        <div class="column side">
+            <h2>Column 1</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+        <div class="column middle">
+            <h2>Column 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illum recusandae magnam hic assumenda maiores facilis repellat,
+                voluptatum enim reiciendis omnis fugiat consequatur qui molestias saepe,
+                rem non deleniti inventore corporis!
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda soluta nisi officiis similique quo, voluptatem 
+                itaque consequatur totam molestias esse ullam repellat,
+                ipsum tempora voluptatibus sint ex porro architecto dolor!
+            </p>
+        </div>
+
+        <div class="column side">
+            <h2>column3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

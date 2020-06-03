@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+<style>
+    #ex1{
+        border: 10px dotted black;
+        padding: 20px;
+        background-color: yellow;
+        width: 50%;
+    }
+    #ex2{
+        border: 10px dotted black;
+        padding: 20px;
+        background-color: yellow;
+        background-clip:padding-box ;
+        width: 50%;
+    }
+    #ex3{
+        border: 10px dotted black;
+        background-color: yellow;
+        width: 50%;
+        padding:20px;
+        background-clip: content-box;
+    }
+</style>
+
+    
+</head>
+<body>
+    <h1>The background-clip Property</h1>
+
+        <p><strong>No background-clip (border-box is default):</strong></p>
+        <div id="ex1">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    
+        <p>background-clip: <strong>padding-box:</strong></p>
+        <div id="ex2">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+
+        <p>background-clip: <strong>content-box:</strong></p>
+        <div id="ex3">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        #grad1{
+            margin-bottom: 30px;
+            width: 50%;
+            height: 200px;
+            background-image: linear-gradient(red,yellow);
+        }
+        #grad2{
+            margin-bottom: 30px;
+            width: 50%;
+            height: 200px;
+            background-image: linear-gradient(to right,red, yellow);
+            background-image: linear-gradient(to right,red,green, blue,purple, yellow);
+
+        }
+        #grad3{
+            margin-bottom: 30px;
+            width: 50%;
+            height: 200px;
+            background-image: linear-gradient(to bottom right, red ,yellow);
+        }
+        #grad4{
+            margin-bottom: 30px;
+            width: 50%;
+            height: 200px;
+            background-image: linear-gradient(-90deg, red ,yellow);
+            background-image: linear-gradient(green, red ,yellow);
+
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Linear Gradient </h1>
+    <p><strong>Top to Bottom </strong> </p>
+    <div id="grad1"></div>
+
+    <p><strong>Right to Left </strong> </p>
+    <div id="grad2"></div>
+
+    <p><strong>Diagonal </strong> </p>
+    <div id="grad3"></div>
+
+    <div id="grad4"></div>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+.container1 div:nth-child(odd) , .container2 div:nth-child(odd){
+    background: lightcoral;
+}
+.container1 div:nth-child(even), .container2 div:nth-child(even){
+    background: lightblue;
+}
+
+.container1{
+    display: grid;
+    grid-gap:3px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 3fr));
+    grid-template-rows: repeat(2, 100px);
+    align-content:center;
+}
+
+.container2{
+    display: grid;
+    grid-gap:3px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 3fr));
+    grid-template-rows: repeat(2, 100px);
+    align-content:center;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadow</title>
+
+    <style>
+        #box-shadow{
+            position: relative;
+            box-shadow: 1px 3px 4px rgba(0,0,0,0.5);
+            padding: 10px;
+            background: white;
+        }
+        #box-shadow img{
+            width: 100%;
+            border: 1px solid #8a4419;
+            border-style: inset;
+        }
+        #box-shadow::after{
+            content: '';
+            position: absolute;
+            z-index: -1;/* hide shadow behind image */
+            box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+            width: 70%;
+            left: 15%;
+            height: 100px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box-shadow">
+        <img src="Img2.jpeg" alt="" width="600" height="400">
+    </div>
+</body>
+</html>

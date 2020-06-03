@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .c1{
+            background-color: green;
+            width: 140px;
+            height: 140px;
+            padding: 15px;
+            border-radius: 25px;
+        }
+        .c2{
+            background-color: green;
+            padding: 40px 70px;
+            height: 150px;
+            width: 250px;
+            border-radius:50%;
+        }
+        .c3{
+            border: 1px solid green;
+            width: 230px;
+            height: 180px;
+            color:white;
+            background: url(Img.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .c3 p{
+            padding-left: 50px;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .image{
+            background: url(Img2.jpeg) no-repeat fixed center;
+            background-size: cover;
+            height: 700px;
+            position: relative;
+        }
+        .text h1{
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <div class="text">
+            <h1>The border-radius Property</h1>
+            <p class="c1">rounded corner</p>
+            <p class="c2">rounded corner</p>
+            <div class="c3">
+                <p>rounded corner</p>
+            </div>
+        </div>
+        <p>Note that this technique will also make the 
+            image responsive: Resize the browser window 
+            to see the effect.
+        </p>  
+    </div>
+   
+</body>
+</html>

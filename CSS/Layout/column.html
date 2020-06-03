@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .navbar a{
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        .column{
+            float:left;
+            width: 33.33%;
+            padding: 15px;
+        }
+
+        @media screen and (max-width:600px){
+            .column {
+                width:100%;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">link</a>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eos in perspiciatis itaque dolores dolorem omnis beatae
+                recusandae nihil tenetur cupiditate ex odio eligendi,
+                rem quas quos porro soluta vel quod.
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illum recusandae magnam hic assumenda maiores facilis repellat,
+                voluptatum enim reiciendis omnis fugiat consequatur qui molestias saepe,
+                rem non deleniti inventore corporis!
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>column3</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda soluta nisi officiis similique quo, voluptatem 
+                itaque consequatur totam molestias esse ullam repellat,
+                ipsum tempora voluptatibus sint ex porro architecto dolor!
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

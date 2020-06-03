@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'header';
+@import 'button';
+
+.contact{
+    @include flexCenter(row,orange);
+    color: lightcoral;
+    @extend button;
+    button{
+        background: blue;
+    }
+}

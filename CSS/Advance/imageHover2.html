@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade in a Box</title>
+
+    <style>
+        .container{
+            position: relative;
+            width: 50%;
+        }
+        .image{
+            opacity: 1;
+            display: block;
+            height: auto;
+            width: 100%;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%,-50%);
+        }
+
+        .container:hover .image{
+            opacity: 0.3;
+        }
+        .container:hover .middle{
+            opacity: 1;
+        }
+        .text{
+            background-color: greenyellow;
+            color: black;
+            font-size: 16px;
+            padding: 16px 12px;
+        }
+
+
+        .container1{
+            position: relative;
+            width: 50%;
+           
+        }
+        .image1{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay{
+            background-color: cornflowerblue;
+            position: absolute;
+            /* from Top */
+            /* bottom: 100%;   */
+            /* from Bottom */
+            bottom:0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+            opacity: 0.5;
+        }
+        .container1:hover .overlay{
+            height: 100%;
+            bottom: 0;
+        }
+        .text1{
+            /* white-space: nowrap;  */
+            font-size: 16px;
+            color: white;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container2{
+            position: relative;
+            width: 50%;
+           
+        }
+        .image2{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay2{
+            background-color: cornflowerblue;
+            position: absolute;
+            bottom: 0;  
+            /* right to left */
+            /* left:100% */
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            width: 0;
+            height:100%;
+            transition: .5s ease;
+            opacity: 0.5;
+        }
+        .container2:hover .overlay2{
+            width: 100%;
+            /* left:0; */
+          
+        }
+        .text2{
+            /* white-space: nowrap;  */
+            font-size: 16px;
+            color: white;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Fade in a Box</h2>
+    <div class="container">
+        <img src="Img2.jpeg" alt="Avatar" class="image" style="width: 100%;"> 
+        <div class="overlay">
+            <div class="text">John Doe</div>
+        </div>
+    </div>
+
+    <h2>Slide in Overlay from the Top</h2>
+    <div class="container1">
+        <img src="Img2.jpeg" alt="Avatar" class="image1" style="width: 100%;"> 
+        <div class="overlay">
+            <div class="text1">Hello World</div>
+        </div>
+    </div>
+    <h2>Slide in Overlay from the Left</h2>
+    <div class="container2">
+        <img src="Img2.jpeg" alt="Avatar" class="image2" style="width: 100%;"> 
+        <div class="overlay2">
+            <div class="text2">Hello World</div>
+        </div>
+    </div>
+</body>
+</html>

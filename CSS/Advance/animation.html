@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        @keyframes example{
+            from {background-color: tomato;}
+            to {background-color: turquoise;}
+        }
+        @keyframes example2{
+            0%{background-color: turquoise;}
+            25%{background-color: seagreen;}
+            50%{background-color: violet;}
+            100%{background-color: blue;}
+        }
+        @keyframes example3{
+            0%{background-color: brown; left: 0px; top: 0px;}
+            25%{background-color: cornflowerblue; left:100px;top:0px;}
+            50%{background-color:forestgreen; left: 100px; top:100px;}
+            75%{background-color:deeppink;left:0px; top: 100px;}
+            100%{background-color: darkorange;left: 0px; top: 0px;}
+        }
+
+        @keyframes example4{
+            0%{background-color: brown; left: 0px; top: 0px;}
+            25%{background-color: cornflowerblue; left:100px;top:0px;}
+            50%{background-color:forestgreen; left: 100px; top:100px;}
+            75%{background-color:deeppink;left:0px; top: 100px;}
+            100%{background-color: darkorange;left: 0px; top: 0px;}
+        }
+        div.T1{
+            margin :20px;
+            background-color: turquoise;
+            width: 100px;
+            height: 100px;
+            color: green;
+            padding:50px;
+            text-align: center;
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        div.T2{
+            margin :20px;
+            background-color: turquoise;
+            width: 100px;
+            height: 100px;
+            color: purple;
+            padding:50px;
+            text-align: center;
+            animation-name: example2;
+            animation-duration: 4s;
+        }
+        div.T3{
+            position: relative;
+            margin: 20px;
+            background-color: thistle;
+            width: 200px;
+            height: 200px;
+            color: black;
+            font-size: 30px;
+            padding: 50px;
+            text-align: center;
+            animation-name: example3;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-iteration-count: infinite;
+        }
+        div.T4{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            padding: 15px;
+            text-align: center;
+            background-color: red;
+            position: relative;
+            animation-name: example4;
+            animation-duration: 4s;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse;
+
+            animation-iteration-count: infinite; */
+            /* animation-fill-mode: backwards; */
+            animation: example4 5s linear infinite reverse;
+
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="T1">
+        Animation T1
+    </div>
+
+    <div class="T2">
+        Animation T2
+    </div>
+
+    <div class="T3">
+        Animation T3
+    </div>
+
+    <div class="T4">
+         T4
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate</title>
+
+    <style>
+        div{
+            background-color: yellow;
+            color: black;
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+
+        div#rotate{
+           transform: rotate(20deg);
+        }
+        div#translate{
+          
+            transform: translate(10px, 100px);
+        }
+        div#rotate-1{
+            transform: rotate(-20deg);
+        }
+        div#scale{
+            margin: 200px;
+            transform: scale(2,3);
+        }
+        div#scale1{
+            margin: 200px;
+            /* transform: scale(0.5,0.5); */
+            /* transform: scaleX(2); */
+            /* transform: scaleX(0.5); */
+            transform: scaleY(2);
+        }
+        div#skew{
+            transform:skewX(20deg);
+            transform:skewY(-20deg);
+  
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+    <div id="normal">
+        <p>Normal div</p>
+    </div>
+
+    <div id="rotate">
+        <p>Rotate div</p>
+    </div>
+
+    <div id="translate">
+        <p>Translate div</p>
+    </div>
+
+    <div id="rotate-1">
+        <p>Rotate-1 div</p>
+    </div>
+
+    <div id="scale">
+        <p>Scale div</p>
+    </div>
+
+    <div id="scale1">
+        <p>Scale div</p>
+    </div>
+
+   <div id="normal">
+        <p>Normal div</p>
+    </div>
+    <div id="skew">
+        <p>Skew div</p>
+    </div>
+
+</body>
+</html>

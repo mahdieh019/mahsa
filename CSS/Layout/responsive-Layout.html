@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+    }
+    .header{
+        background-color: #ccc;
+        text-align: center;
+        padding: 14px;
+    }
+    .navbar{
+        background-color: black;
+       overflow: hidden;       
+    }
+
+    .navbar a{
+        float: left;
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 16px 20px;
+    }
+
+    .navbar a:hover{
+        background-color: #ccc;
+        color: black;
+    }
+
+    .leftcolumn{
+        float: left;
+        width: 75%;
+    }
+    .rightcolumn{
+        float: left;
+        width:25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+    .fakeimg{
+        background-color: #aaa;
+        padding:20px;
+        width: 100%;
+    }
+
+    .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .container:after{
+       content:"";
+       display: table;
+       clear: both;
+    }
+    .footer{
+        padding: 20px;
+        background-color: #aaa;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width:800px){
+        .leftcolumn, .rightcolumn{
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        .navbar a{
+            float: none;
+            width: 100%;
+        }
+    }
+</style>
+
+
+
+</head>
+<body>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+    <div class="navbar">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="container">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>header1</h2>
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <div class="fakeimg" style="height:200px">image</div>
+                <p>some text</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illum recusandae magnam hic assumenda maiores facilis
+                repellat, voluptatum enim reiciendis omnis fugiat
+                consequatur qui molestias saepe, rem non deleniti
+                inventore corporis!
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>header1</h2>
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                <div class="fakeimg" style="height:200px">image</div>
+                <p>some text</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illum recusandae magnam hic assumenda maiores facilis
+                repellat, voluptatum enim reiciendis omnis fugiat
+                consequatur qui molestias saepe, rem non deleniti
+                inventore corporis!
+                </p>
+            </div>
+            
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>header2</h2>
+                <div class="fakeimg" style="height:100px">image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="card">
+                <h2>header2</h2>
+                <div class="fakeimg" style="height:100px">image</div>
+                <div class="fakeimg" style="height:100px">image</div>
+                <div class="fakeimg" style="height:100px">image</div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

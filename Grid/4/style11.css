@@ -1,0 +1,46 @@
+.flex div:nth-child(odd), .grid div:nth-child(odd){
+    background: lightcoral;
+}
+.flex div:nth-child(even), .grid div:nth-child(even){
+    background: lightblue;
+}
+
+.flex{
+    display: flex;
+    height: 50px;
+    grid-template-columns: auto;
+}
+.flex > div:nth-child(3){
+    margin-left: auto;
+}
+
+
+
+.grid{
+    color: #fff;
+    display: grid;
+    height: 50px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+.header{
+    color: #333;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header > div:nth-child(3){
+    margin-left: auto;
+
+}
+.menu{
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.content{
+    grid-column: 2/-1;
+}
+.footer{
+    grid-column: 1/-1;
+}

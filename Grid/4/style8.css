@@ -1,0 +1,19 @@
+.container div:nth-child(odd){
+    background: lightcoral;
+}
+.container div:nth-child(even){
+    background: lightblue;
+}
+
+.container{
+    border: 1px solid #333;
+    height: 800px;
+    display: grid;
+    grid-gap:3px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: space-evenly;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-content:center;
+}

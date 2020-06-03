@@ -1,50 +1,53 @@
 # Node.js
--sudo apt i nodejs
--sudo apt i npm
--nodejs -v 		to check which version of Nodejs
+$ sudo apt i nodejs
+$ sudo apt i npm
+$ nodejs -v 		to check which version of Nodejs
 
 
 # To connect Git to Github
 
--Get a Github account
--Download & install Git
--Setup Git with username & email
+## Get a Github account
+## Download & install Git
+## Setup Git with username & email
 
 	$ git config --global user.name "Your name here"
 
 	$ git config --global user.email "your_email@example.com"
 
-extra:
+## extra:
+
 	$ git config --global color.ui true
 
 	$ git config --global core.editor emacs
 
--Checking for existing SSH keys
+## Checking for existing SSH keys
 	$ ls -al ~/.ssh
 
-	# Lists the files in your .ssh directory, if they exist
+## Lists the files in your .ssh directory, if they exist
 
 	Check the directory listing to see if you already have a public SSH key. By default, the filenames of the public 	keys are one of the following:
     • id_rsa.pub
     • id_ecdsa.pub
     • id_ed25519.pub
 
--Generating a new SSH key and adding it to the ssh-agent
+## Generating a new SSH key and adding it to the ssh-agent
 
-      1. If not, create such public/private keys: Open a terminal/shell and type:
+    1. If not, create such public/private keys: Open a terminal/shell and type:
       $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
       
 	This creates a new ssh key, using the provided email as a label.
 	> Generating public/private rsa key pair.
 
 	When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file 		location.
+
 	> Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]
 	> Enter passphrase (empty for no passphrase): [Type a passphrase]
 	> Enter same passphrase again: [Type passphrase again]
 
 	2. Add the SSH key to your GitHub account.
-	          In Github:     Settings →SSH and GPG keys→ New SSH key
-		1. In the "Title" field, add a descriptive label for the new key. For example, if you're 				using a personal Mac, you might call this key "Personal MacBook Air".
+	    In Github:     Settings →SSH and GPG keys→ New SSH key
+
+		1. In the "Title" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 
 		2 . Copy SSH Keys 
  	 	    cat /home/mahsa/.ssh/id_rsa.pub   or (cat filename e.g. mahsa.pub  … it is public key, which starts 			  with ssh-rsa and at the end the email address)
